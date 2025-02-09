@@ -33,9 +33,12 @@ public class Login extends HttpServlet {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                // ✅ Login success - Create a session and redirect to home.jsp
+                // ✅ Store user ID and name in session
                 HttpSession session = req.getSession();
-                session.setAttribute("userName", rs.getString("name")); // Store user name in session
+                session.setAttribute("userId", rs.getInt("id")); // Store user ID
+                session.setAttribute("userName", rs.getString("name")); // Store user name
+                
+                System.out.println("User logged in - ID: " + rs.getInt("id") + ", Name: " + rs.getString("name"));
 
                 resp.sendRedirect("home.jsp"); // Redirect to home page
             } else {

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333;
+	padding: 0px 20px;
+}
+
+.logo {
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+}
+
+.nav-links li {
+	display: inline;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px;
+	transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+	background-color: #575757;
+	border-radius: 5px;
+}
+
+.logout-button {
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 8px 15px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.logout-button:hover {
+	background-color: darkred;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f9f9f9;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+	padding: 20px;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.services {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.service {
+	flex: 1 1 calc(25% - 20px);
+	background: #ffffff;
+	padding: 20px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+	transition: transform 0.2s;
+}
+
+.service:hover {
+	transform: scale(1.05);
+}
+
+.form-container, .bill-container, .success-message {
+	display: none;
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+.form-group label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+}
+
+.button {
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #ffffff;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.button:hover {
+	background-color: #0056b3;
+}
